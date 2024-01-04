@@ -1,6 +1,5 @@
-package linkedlistoperation;
+package singlylinkedlist;
 
-import linkedlist.SinglyLinkedListNode;
 import java.util.Scanner;
 
 public class LinkedListInsertOperation {

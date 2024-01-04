@@ -1,6 +1,4 @@
-package linkedlistoperation;
-
-import linkedlist.SinglyLinkedListNode;
+package singlylinkedlist;
 
 public class LinkedListReverse {
     public SinglyLinkedListNode reverse(SinglyLinkedListNode head) {

@@ -1,6 +1,5 @@
-package linkedlistoperation;
+package singlylinkedlist;
 
-import linkedlist.SinglyLinkedListNode;
 public class LinkedListMergeOperation {
     public SinglyLinkedListNode merge(SinglyLinkedListNode head1, SinglyLinkedListNode head2) {
         SinglyLinkedListNode mergedHead = new SinglyLinkedListNode(-1);

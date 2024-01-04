@@ -1,6 +1,4 @@
-package linkedlistoperation;
-
-import linkedlist.SinglyLinkedListNode;
+package singlylinkedlist;
 
 public class LinkedListDeleteOperation {
     public SinglyLinkedListNode deleteAtIndex(SinglyLinkedListNode head, int index) {

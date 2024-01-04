@@ -1,6 +1,4 @@
-package linkedlistoperation;
-
-import linkedlist.SinglyLinkedListNode;
+package singlylinkedlist;
 
 public class LinkedListComparison {
     public boolean compareTo(SinglyLinkedListNode head1, SinglyLinkedListNode head2) {

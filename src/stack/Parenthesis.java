@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.util.Scanner;
 import java.util.Stack;
 
-// https://www.hackerrank.com/challenges/balanced-brackets/problem?isFullScreen=false
-
 public class Parenthesis {
     public boolean isValidParenthesis(String brackets)
     {
