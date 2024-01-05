@@ -1,13 +1,22 @@
 package tree;
 
 public class TreeHeight {
-    public int findHeight(TreeNode root) {
+    public int findMaxHeight(TreeNode root) {
         if (root == null) {
             return 0;
         }
-        int leftHeight = findHeight(root.left);
-        int rightHeight = findHeight(root.right);
+        int leftHeight = findMaxHeight(root.left);
+        int rightHeight = findMaxHeight(root.right);
         return Math.max(leftHeight, rightHeight) + 1;
+    }
+
+    public int findMinHeight(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int leftHeight = findMinHeight(root.left);
+        int rightHeight = findMinHeight(root.right);
+        return Math.min(leftHeight, rightHeight) + 1;
     }
 
     public static void main(String[] args) {
@@ -20,7 +29,9 @@ public class TreeHeight {
         root.right.right = new TreeNode(7);
 
         TreeHeight treeHeight = new TreeHeight();
-        int height = treeHeight.findHeight(root);
-        System.out.println("Height of the tree: " + height);
+        int maxHeight = treeHeight.findMaxHeight(root);
+        int minHeight = treeHeight.findMinHeight(root);
+        System.out.println("Max height of the tree: " + maxHeight);
+        System.out.println("Min height of the tree: " + minHeight);
     }
 }
